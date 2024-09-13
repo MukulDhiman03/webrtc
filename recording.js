@@ -1,9 +1,11 @@
 let mediaRecorder;
 let recordedBlob = []; //array to hold the blobs for playback
+
 const startRecording = () => {
   console.log("Recording started");
   //make a media recorder from the constructor
-  mediaRecorder = new MediaRecorder(stream);
+  mediaRecorder = new MediaRecorder(mediaScreen);
+
   mediaRecorder.ondataavailable = (e) => {
     console.log("Data is available for media recorder");
     recordedBlob.push(e.data);

@@ -19,6 +19,6 @@ const changeVideoSize = () => {
 //   });
 // };
 
-document
-  .querySelector(".changeScreenSize")
-  .addEventListener("click", () => changeVideoSize());
+// document
+//   .querySelector(".changeScreenSize")
+//   .addEventListener("click", () => changeVideoSize());

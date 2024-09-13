@@ -9,7 +9,6 @@ let constraints = {
 const getMicAndCamera = async () => {
   try {
     stream = await navigator.mediaDevices.getUserMedia(constraints);
-    // console.log(stream);
   } catch (err) {
     console.log(err.message);
   }
